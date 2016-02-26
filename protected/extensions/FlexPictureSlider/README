@@ -1,0 +1,41 @@
+Version 1.1
+
+	To use the FlexPictureSlider:
+	1) Extract archive in your extensions folder
+	2) In the site root create a folder named "images" and copy content of image folder from archive
+
+	To include a slider in a page:
+	
+Yii::app()->clientScript->registerCoreScript('jquery'); //if you do not set yet
+ 
+  //you have to put this code in your view file
+  $this->widget('ext.FlexPictureSlider.FlexPictureSlider',
+  array('imageBlockSelector' => '#myslider', //the jquery selector
+  );
+ 
+ 
+  //or with full custom parameters
+  $this->widget('ext.FlexPictureSlider.FlexPictureSlider',
+  array(
+    'imageBlockSelector' => '#myslider', //the jquery selector
+    'widthSlider' => '900', //or you can use jquery '$(window).width()/1.6',
+    'heightSlider' => '275', //or you can use jquery '$(window).height()/1.6',
+    'slideUnitSize' => 'px', //px or %
+    'timeBetweenChangeSlider' => 4000, //the time between displayed sliders in miliseconds
+    'timeDelayAnimation' => 1000, //the time before slider starts in miliseconds
+    'sliderStartFrom' => 0, //if sliderSuffle is set to true then sliderStartFrom is not nesessary
+    'sliderSuffle' => true, //suffle the pictures for random display
+   )); 
+  ?>
+ 
+
+  <div id="myslider">
+  <?php
+  echo CHtml::image(Yii::app()->request->baseUrl . '/images/01.jpg', 'alt 1');
+  echo CHtml::image(Yii::app()->request->baseUrl . '/images/02.jpg', 'alt 2');
+  echo CHtml::image(Yii::app()->request->baseUrl . '/images/03.jpg', 'alt 3');
+  echo CHtml::image(Yii::app()->request->baseUrl . '/images/04.jpg', 'alt 4');
+  echo CHtml::image(Yii::app()->request->baseUrl . '/images/05.png', 'alt 5');
+  ?>
+  </div>
+	

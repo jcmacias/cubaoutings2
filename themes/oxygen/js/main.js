@@ -16,11 +16,14 @@ jQuery(function($) {
 	
 	//Scroll Menu
 	$(window).on('scroll', function(){
-		if( $(window).scrollTop()>slideHeight ){
-			$('.main-nav').addClass('navbar-fixed-top');
-		} else {
-			$('.main-nav').removeClass('navbar-fixed-top');
+		if(layout == 1){
+			if( $(window).scrollTop()>slideHeight ){
+				$('.main-nav').addClass('navbar-fixed-top');
+			} else {
+				$('.main-nav').removeClass('navbar-fixed-top');
+			}
 		}
+
 	});
 	
 	// Navigation Scroll

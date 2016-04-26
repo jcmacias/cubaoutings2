@@ -39,7 +39,7 @@
         <div class="carousel-inner">
             <div class="item active" style="background-image: url(../../images/slider/1.jpg)">
                 <div class="caption">
-                    <h1 class="animated fadeInLeftBig">Welcome to <span>Cubaoutings</span></h1>
+                    <h1 class="animated fadeInLeftBig">Welcome to <span class="caption_slider">Cubaoutings</span></h1>
 
                     <p class="animated fadeInRightBig"><?php echo Yii::t('app', 'The best way to explore Cuba.'); ?></p>
                     <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
@@ -47,7 +47,7 @@
             </div>
             <div class="item" style="background-image: url(../../images/slider/2.jpg)">
                 <div class="caption">
-                    <h1 class="animated fadeInLeftBig">Say Hello to <span>Oxygen</span></h1>
+                    <h1 class="animated fadeInLeftBig">Say Hello to <span class="caption_slider2">Cubaoutings</span></h1>
 
                     <p class="animated fadeInRightBig">Bootstrap - Responsive Design - Retina Ready - Parallax</p>
                     <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>

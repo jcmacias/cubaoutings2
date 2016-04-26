@@ -210,4 +210,11 @@ class ToursController extends Controller
 			$this->render('transfer_it');
 		}
     }
+	public function getCommentsNum($id){
+
+		$count = Comment::model()->countByAttributes(array(
+			'tours_id'=> $id
+		));
+     return $count;
+	}
 }

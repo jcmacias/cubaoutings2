@@ -223,10 +223,22 @@
     margin-top: -49px;
     background-repeat: no-repeat;
 }
-.facebook{
-    margin-top: 10px;
-}
+/*.facebook{*/
+    /*margin-top: 10px;*/
+/*}*/
 /*NUEVOS*/
 .content-adds{
     padding-top: 45px;
+}
+.caption_slider{
+    color: rgb(255, 3, 107) !important;
+}
+.caption_slider2{
+    color: #17BC9C !important;
+}
+.carousel-fade .carousel-inner .item::after {
+    background: rgba(0,0,0,.5);
+}
+.tours_h3{
+    font-size: 16px;
 }
